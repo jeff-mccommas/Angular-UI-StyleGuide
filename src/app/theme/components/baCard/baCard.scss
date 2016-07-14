@@ -1,0 +1,21 @@
+.card-title{
+    display: inline;
+}
+.view-source{
+    cursor:pointer;
+    float: right;
+}
+.source-html {
+    color: #666666;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 24px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.source-html pre{
+    background: #ffffff;
+    color: gray;
+    padding: 10px;
+}

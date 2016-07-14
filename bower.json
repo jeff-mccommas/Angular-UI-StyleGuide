@@ -1,0 +1,19 @@
+{
+  "name": "Liaison-Style-Guide",
+  "version": "0.0.1",
+  "description": "Liaison-Style-Guide-Angular 2 and Bootstrap4 .",
+  "license": "MIT",
+  "moduleType": [
+    "es6"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Ionicons": "ionicons#~2.0.1"
+  }
+}
