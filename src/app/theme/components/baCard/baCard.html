@@ -1,13 +1,13 @@
 <div baCardBlur class="animated fadeIn card {{cardType}} {{baCardClass || ''}}" zoom-in>
-    <div *ngIf="title" class="card-header clearfix">
-        <h3 class="card-title">{{title}}</h3>
-        <a *ngIf="source" (click)="lgModal.show()" class="view-source">Source
+  <div *ngIf="title" class="card-header clearfix">
+    <h3 class="card-title">{{title}}</h3>
+    <a *ngIf="source" (click)="lgModal.show()" class="view-source">Source
                   </a>
-        <!--<button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>-->
-    </div>
-    <div class="card-body">
-        <ng-content></ng-content>
-    </div>
+    <!--<button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>-->
+  </div>
+  <div class="card-body">
+    <ng-content></ng-content>
+  </div>
 </div>
 <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -16,13 +16,16 @@
         <button type="button" class="close" (click)="lgModal.hide()" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title">Source HTML</h4>
+        <h4 class="modal-title">Source HTML | <button class="btn" (click)="copyTextToClipboard(sourcehtml)">
+          COPY TO CLIPBOARD
+        </button>
+        </h4>
       </div>
-      <div class="modal-body">
-        <div   class="source-html">
-            <div class="well well-lg">
-                <pre id="source-html-code">{{sourcehtml}}</pre>
-            </div>
+      <div class="modal-body"> 
+        <div class="source-html">
+          <div class="well well-lg" id="CopySourceHtml">
+            <pre id="source-html-code">{{sourcehtml}}</pre>
+          </div>
         </div>
       </div>
     </div>

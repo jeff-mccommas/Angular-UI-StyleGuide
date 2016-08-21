@@ -240,7 +240,7 @@ module.exports = {
     // TODO: make sure this is a correct configuration
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
-      $: 'jquery',
+      $: 'jquery', 
       jquery: 'jquery',
       'Tether': 'tether',
       'window.Tether': 'tether'

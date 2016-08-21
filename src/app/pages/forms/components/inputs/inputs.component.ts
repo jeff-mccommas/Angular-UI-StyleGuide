@@ -16,7 +16,8 @@ import {Rating} from './components/ratinginputs';
   template: require('./inputs.html'),
 })
 export class Inputs {
-
+  standardInputsHtml:string = require('./components/standardInputs/standardInputs.html');
+  validationInputsHtml:string = require('./components/validationInputs/validationInputs.html');
   constructor() {
   }
 }
