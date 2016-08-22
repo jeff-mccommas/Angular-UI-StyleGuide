@@ -124,7 +124,7 @@ exports.register = function (req, res) {
     var userData = req.body;
     UserModel.findOne({
         'email': userData.email
-    }, function (err, user) { 
+    }, function (err, user) {
         if (err) {
             res.sendStatus(500);
         }
