@@ -12,7 +12,7 @@
 <p>Once you have those, you should install these globals with <code>npm install --global</code>:</p>
 <ul>
 <li>
-<pre><code class="lang-bash">npm install -g bower webpack webpack-dev-server typings typescript
+<pre><code class="lang-bash">npm install -g bower webpack webpack-dev-server typescript@beta
 </code></pre>
 </li>
 </ul>
