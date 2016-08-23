@@ -12,7 +12,7 @@
 <p>Once you have those, you should install these globals with <code>npm install --global</code>:</p>
 <ul>
 <li>
-<pre><code class="lang-bash">npm install -g bower webpack webpack-dev-server typings typescript
+<pre><code class="lang-bash">npm install -g bower webpack webpack-dev-server typescript@beta
 </code></pre>
 </li>
 </ul>
@@ -25,7 +25,6 @@ cd Liaison-Admin-Style-Guide
 <pre> npm install</pre>
 <pre> npm start</pre>
 Open new terminal window and run: 
-<pre>nodemon server</pre>
 <p>This will setup a working copy of Liaison-Admin-Style-Guide on your local&nbsp;machine.</p>
 <h2 id="running-local-copy">Running local&nbsp;copy</h2>
 <p>To run a local copy in development mode,&nbsp;execute:</p>
