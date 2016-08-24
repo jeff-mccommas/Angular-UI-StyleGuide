@@ -2,7 +2,7 @@
  * Created by jmccommas on 8/24/16.
  */
 import {Injectable} from '@angular/core';
-import {menuItems} from '../../../app.menu';
+// import {menuItems} from '../../../app.menu';
 import {applicantuxMenuItems} from '../../../menu/applicantux.menu';
 import {applicantuiMenuItems} from '../../../menu/applicantui.menu';
 import {configuiMenuItems} from '../../../menu/configui.menu';

@@ -4,10 +4,10 @@ import {Injectable} from '@angular/core';
 export class ConstantService {
     getEnvironment = function () {
         var HostName = window.location.hostname;
-        if(HostName !== "localhost" && HostName !== "127.0.0.1"){
+        if (HostName !== "localhost" && HostName !== "127.0.0.1") {
             //Its not localEnvironment
             return false;
-        }else{
+        } else {
             //It is localEnvironment
             return true;
         }

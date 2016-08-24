@@ -23,8 +23,15 @@ import {Ckeditor} from './editors/components/ckeditor/ckeditor.component';
 import {Components} from './components/components.component';
 import {TreeView} from './components/components/treeView/treeView.component';
 
+
+let apps = {
+  configui: "configui",
+  applicantGateway: "applicant-gateway",
+  evaluator: "evaluator",
+  applicantUx: "applicant-ux"
+};
 //noinspection TypeScriptValidateTypes
-export const PagesRoutes:RouterConfig = [
+export const PagesRoutes: RouterConfig = [
   {
     path: 'pages',
     component: Pages,
@@ -38,7 +45,8 @@ export const PagesRoutes:RouterConfig = [
             icon: 'ion-android-home',
             selected: false,
             expanded: false,
-            order: 0
+            order: 0,
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         }
       },
@@ -52,6 +60,7 @@ export const PagesRoutes:RouterConfig = [
             selected: false,
             expanded: false,
             order: 100,
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         },
         children: [
@@ -60,7 +69,7 @@ export const PagesRoutes:RouterConfig = [
             component: Ckeditor,
             data: {
               menu: {
-                title: 'CKEditor',
+                title: 'CKEditor'
               }
             }
           }
@@ -76,43 +85,9 @@ export const PagesRoutes:RouterConfig = [
             selected: false,
             expanded: false,
             order: 250,
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
-        },
-        children: [
-          {
-            path: 'treeview',
-            component: TreeView,
-            data: {
-              menu: {
-                title: 'Tree View',
-              }
-            }
-          }
-        ]
-      },
-      {
-        path: 'charts',
-        component: Charts,
-        data: {
-          menu: {
-            title: 'Charts',
-            icon: 'ion-stats-bars',
-            selected: false,
-            expanded: false,
-            order: 200,
-          }
-        },
-        children: [
-          {
-            path: 'chartist-js',
-            component: ChartistJs,
-            data: {
-              menu: {
-                title: 'Chartist.Js',
-              }
-            }
-          }
-        ]
+        }
       },
       {
         path: 'ui',
@@ -124,6 +99,7 @@ export const PagesRoutes:RouterConfig = [
             selected: false,
             expanded: false,
             order: 300,
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         },
         children: [
@@ -175,6 +151,7 @@ export const PagesRoutes:RouterConfig = [
             selected: false,
             expanded: false,
             order: 400,
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         },
         children: [
@@ -208,6 +185,7 @@ export const PagesRoutes:RouterConfig = [
             selected: false,
             expanded: false,
             order: 500,
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         },
         children: [
@@ -217,57 +195,6 @@ export const PagesRoutes:RouterConfig = [
             data: {
               menu: {
                 title: 'Basic Tables',
-              }
-            }
-          }
-        ]
-      },
-      {
-        path: 'maps',
-        component: Maps,
-        data: {
-          menu: {
-            title: 'Maps',
-            icon: 'ion-ios-location-outline',
-            selected: false,
-            expanded: false,
-            order: 600,
-          }
-        },
-        children: [
-          {
-            path: 'googlemaps',
-            component: GoogleMaps,
-            data: {
-              menu: {
-                title: 'Google Maps',
-              }
-            }
-          },
-          {
-            path: 'leafletmaps',
-            component: LeafletMaps,
-            data: {
-              menu: {
-                title: 'Leaflet Maps',
-              }
-            }
-          },
-          {
-            path: 'bubblemaps',
-            component: BubbleMaps,
-            data: {
-              menu: {
-                title: 'Bubble Maps',
-              }
-            }
-          },
-          {
-            path: 'linemaps',
-            component: LineMaps,
-            data: {
-              menu: {
-                title: 'Line Maps',
               }
             }
           }
