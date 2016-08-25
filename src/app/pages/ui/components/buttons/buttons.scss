@@ -128,3 +128,92 @@ $btn-icon-size: 34px;
   text-align: center;
   margin: 5px 0;
 }
+
+.btn-cancel:hover,
+.btn-cancel:focus,
+.btn-cancel:active,
+.btn-cancel.active,
+.open .dropdown-toggle.btn-cancel {
+  color: #121212;
+  background-color: #A3A3A3;
+  border-color: #C9C9C9;
+}
+
+.btn-cancel:active,
+.btn-cancel.active,
+.open .dropdown-toggle.btn-cancel {
+  background-image: none;
+}
+
+.btn-cancel.disabled,
+.btn-cancel[disabled],
+fieldset[disabled] .btn-cancel,
+.btn-cancel.disabled:hover,
+.btn-cancel[disabled]:hover,
+fieldset[disabled] .btn-cancel:hover,
+.btn-cancel.disabled:focus,
+.btn-cancel[disabled]:focus,
+fieldset[disabled] .btn-cancel:focus,
+.btn-cancel.disabled:active,
+.btn-cancel[disabled]:active,
+fieldset[disabled] .btn-cancel:active,
+.btn-cancel.disabled.active,
+.btn-cancel[disabled].active,
+fieldset[disabled] .btn-cancel.active {
+  background-color: #C9C9C9;
+  border-color: #C9C9C9;
+}
+
+.btn-cancel .badge {
+  color: #C9C9C9;
+  background-color: #121212;
+}
+
+
+
+// Save Buttons
+.btn-save {
+  color: #2B80CF;
+  background-color: #D2E7F6;
+  border-color: #D2E7F6;
+  border-radius: 0;
+}
+
+.btn-save:hover,
+.btn-save:focus,
+.btn-save:active,
+.btn-save.active,
+.open .dropdown-toggle.btn-save {
+  color: #2B80CF;
+  background-color: #87B5D6;
+  border-color: #D2E7F6;
+}
+
+.btn-save:active,
+.btn-save.active,
+.open .dropdown-toggle.btn-save {
+  background-image: none;
+}
+
+.btn-save.disabled,
+.btn-save[disabled],
+fieldset[disabled] .btn-save,
+.btn-save.disabled:hover,
+.btn-save[disabled]:hover,
+fieldset[disabled] .btn-save:hover,
+.btn-save.disabled:focus,
+.btn-save[disabled]:focus,
+fieldset[disabled] .btn-save:focus,
+.btn-save.disabled:active,
+.btn-save[disabled]:active,
+fieldset[disabled] .btn-save:active,
+.btn-save.disabled.active,
+.btn-save[disabled].active,
+fieldset[disabled] .btn-save.active {
+  background-color: #D2E7F6;
+  border-color: #D2E7F6;
+}
+.btn-save .badge {
+  color: #D2E7F6;
+  background-color: #2B80CF;
+}

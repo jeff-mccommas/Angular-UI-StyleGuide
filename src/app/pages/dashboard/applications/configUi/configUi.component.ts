@@ -10,7 +10,6 @@ import { CollapseDirective } from 'ng2-bootstrap/components/collapse';
   providers: [],
   styles: [require('./configUi.scss')],
   template: require('./configUi.html')
-  collapse:false
 })
 export class ConfigUi {
   constructor() {}
