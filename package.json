@@ -130,7 +130,7 @@
     "pretest": "npm run lint",
     "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./src/",
     "gh-pages": "wintersmith build -C docs && gh-pages -d docs/build",
-    "start": "npm  | nodemon server run server:dev",
+    "start": "npm run server:dev | nodemon server",
     "start:hmr": "npm run server:dev:hmr",
     "postinstall": "npm run typings -- install && bower install",
     "version": " npm run build",
