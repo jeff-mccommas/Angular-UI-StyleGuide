@@ -1,6 +1,6 @@
 {
   "name": "Liaison-Style-Guide",
-  "version": "0.3.0",
+  "version": "0.4.3",
   "description": "Angular 2 and Bootstrap Liaison-Style-Guide.",
   "author": "UI Dev Team",
   "homepage": "http://liaison.com/",
@@ -89,6 +89,7 @@
     "tslint": "^3.7.1",
     "tslint-loader": "^2.1.3",
     "typedoc": "^0.4.4",
+    "typescript": "^2.0.0-beta",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
@@ -129,10 +130,10 @@
     "pretest": "npm run lint",
     "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./src/",
     "gh-pages": "wintersmith build -C docs && gh-pages -d docs/build",
-    "start": "npm run server:dev",
+    "start": "npm nodemon server | run server:dev",
     "start:hmr": "npm run server:dev:hmr",
     "postinstall": "npm run typings -- install && bower install",
-    "version": "npm run build",
+    "version": " npm run build",
     "postversion": "git push && git push --tags"
   },
   "repository": {
