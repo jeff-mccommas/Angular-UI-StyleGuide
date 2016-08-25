@@ -141,7 +141,7 @@
     "url": "https://github.com/Liaison-Intl/Liaison-Angular-StyleGuide.git"
   },
   "engines": {
-    "node": ">= 4.2.1",
-    "npm": ">= 3"
+    "node": ">= 6.4.0",
+    "npm": ">= 3.10.3"
   }
 }
