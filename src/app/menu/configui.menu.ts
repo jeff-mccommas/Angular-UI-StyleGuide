@@ -8,20 +8,6 @@ export const configuiMenuItems = [
     order: 0
   },
   {
-    title: 'Config UI Charts',
-    component: 'Charts',
-    icon: 'ion-stats-bars',
-    selected: false,
-    expanded: false,
-    order: 200,
-    subMenu: [
-      {
-        title: 'Chartist.Js',
-        component: 'ChartistJs',
-      },
-    ]
-  },
-  {
     title: 'UI Features',
     component: 'Ui',
     icon: 'ion-android-laptop',
@@ -51,8 +37,8 @@ export const configuiMenuItems = [
     title: 'Form Elements',
     component: 'Forms',
     icon: 'ion-compose',
-    selected: false,
-    expanded: false,
+    selected: true,
+    expanded: true,
     order: 400,
     subMenu: [
       {
@@ -80,42 +66,16 @@ export const configuiMenuItems = [
     ]
   },
   {
-    title: 'Maps',
-    component: 'Maps',
-    icon: 'ion-ios-location-outline',
-    selected: false,
-    expanded: false,
-    order: 600,
-    subMenu: [
-      {
-        title: 'Google Maps',
-        component: 'GoogleMaps',
-      },
-      {
-        title: 'Leaflet Maps',
-        component: 'LeafletMaps',
-      },
-      {
-        title: 'Bubble Maps',
-        component: 'BubbleMaps',
-      },
-      {
-        title: 'Line Maps',
-        component: 'LineMaps',
-      }
-    ]
-  },
-  {
     title: 'Menu Level 1',
     icon: 'ion-ios-more',
     selected: false,
-    expanded: false,
-    order: 700,
+    expanded: true,
+    order: 600,
     subMenu: [
       {
         title: 'Menu Level 1.1',
         url: '#',
-        disabled: true,
+        disabled: false,
         selected: false,
         expanded: false
       },
@@ -138,7 +98,7 @@ export const configuiMenuItems = [
     icon: 'ion-android-exit',
     selected: false,
     expanded: false,
-    order: 800,
+    order: 700,
     target: '_blank'
   }
 ];

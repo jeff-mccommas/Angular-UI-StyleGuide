@@ -16,12 +16,12 @@
         <button type="button" class="close" (click)="lgModal.hide()" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title">Source HTML | <button class="btn" (click)="copyTextToClipboard(sourcehtml)">
+        <h4 class="modal-title">Source HTML | <button class="btn btn-copy" (click)="copyTextToClipboard(sourcehtml)">
           COPY TO CLIPBOARD
         </button>
         </h4>
       </div>
-      <div class="modal-body"> 
+      <div class="modal-body">
         <div class="source-html">
           <div class="well well-lg" id="CopySourceHtml">
             <pre id="source-html-code">{{sourcehtml}}</pre>

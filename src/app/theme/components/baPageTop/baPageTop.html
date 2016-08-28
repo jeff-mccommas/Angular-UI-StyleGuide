@@ -1,6 +1,6 @@
 <div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)"
      [ngClass]="{scrolled: isScrolled}">
-  <a href="#/pages/dashboard" class="al-logo clearfix"><span>Laison</span>StyleGuide</a>
+  <a href="#/pages/dashboard" class="al-logo clearfix"><span>Liaison Application</span>StyleGuide</a>
   <a (click)="toggleMenu()" class="collapse-menu-link ion-navicon"></a>
 
   <div class="search">
@@ -18,6 +18,6 @@
         <li class="dropdown-item">Hi, {{styleGuideUser.name}}</li>
         <li class="dropdown-item"><a href class="signout" (click)="gotoLogin()"><i class="fa fa-power-off"></i>Sign out</a></li>
       </div>
-    </div> 
+    </div>
   </div>
 </div>
