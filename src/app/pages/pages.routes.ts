@@ -83,7 +83,7 @@ export const PagesRoutes:RouterConfig = [
             selected: false,
             expanded: false,
             order: 250,
-            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+           // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         },
         children: [
