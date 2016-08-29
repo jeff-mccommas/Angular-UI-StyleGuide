@@ -22,8 +22,6 @@ import {Editors} from './editors/editors.component';
 import {Ckeditor} from './editors/components/ckeditor/ckeditor.component';
 import {Components} from './components/components.component';
 import {TreeView} from './components/components/treeView/treeView.component';
-
-
 let apps = {
   configui: "configui",
   applicantGateway: "applicant-gateway",
@@ -31,7 +29,7 @@ let apps = {
   applicantUx: "applicant-ux"
 };
 //noinspection TypeScriptValidateTypes
-export const PagesRoutes: RouterConfig = [
+export const PagesRoutes:RouterConfig = [
   {
     path: 'pages',
     component: Pages,
@@ -60,7 +58,7 @@ export const PagesRoutes: RouterConfig = [
             selected: false,
             expanded: false,
             order: 100,
-            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         },
         children: [
@@ -69,7 +67,7 @@ export const PagesRoutes: RouterConfig = [
             component: Ckeditor,
             data: {
               menu: {
-                title: 'CKEditor'
+                title: 'CKEditor',
               }
             }
           }
@@ -85,9 +83,45 @@ export const PagesRoutes: RouterConfig = [
             selected: false,
             expanded: false,
             order: 250,
-            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
-        }
+        },
+        children: [
+          {
+            path: 'treeview',
+            component: TreeView,
+            data: {
+              menu: {
+                title: 'Tree View',
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: 'charts',
+        component: Charts,
+        data: {
+          menu: {
+            title: 'Charts',
+            icon: 'ion-stats-bars',
+            selected: false,
+            expanded: false,
+            order: 200,
+            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+          }
+        },
+        children: [
+          {
+            path: 'chartist-js',
+            component: ChartistJs,
+            data: {
+              menu: {
+                title: 'Chartist.Js',
+              }
+            }
+          }
+        ]
       },
       {
         path: 'ui',
@@ -199,6 +233,187 @@ export const PagesRoutes: RouterConfig = [
             }
           }
         ]
+      },
+      {
+        path: 'maps',
+        component: Maps,
+        data: {
+          menu: {
+            title: 'Maps',
+            icon: 'ion-ios-location-outline',
+            selected: false,
+            expanded: false,
+            order: 600,
+            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+          }
+        },
+        children: [
+          {
+            path: 'googlemaps',
+            component: GoogleMaps,
+            data: {
+              menu: {
+                title: 'Google Maps',
+              }
+            }
+          },
+          {
+            path: 'leafletmaps',
+            component: LeafletMaps,
+            data: {
+              menu: {
+                title: 'Leaflet Maps',
+              }
+            }
+          },
+          {
+            path: 'bubblemaps',
+            component: BubbleMaps,
+            data: {
+              menu: {
+                title: 'Bubble Maps',
+              }
+            }
+          },
+          {
+            path: 'linemaps',
+            component: LineMaps,
+            data: {
+              menu: {
+                title: 'Line Maps',
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: '',
+        data: {
+          menu: {
+            title: 'Pages',
+            icon: 'ion-document',
+            selected: false,
+            expanded: false,
+            order: 650,
+            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+
+          }
+        },
+        children: [
+          {
+            path: '',
+            data: {
+              menu: {
+                title: 'Login',
+                url: '#/login'
+              }
+            }
+          },
+          {
+            path: '',
+            data: {
+              menu: {
+                title: 'Register',
+                url: '#/register'
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: '',
+        data: {
+          menu: {
+            title: 'Resources',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 700,
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+
+          }
+        },
+        children: [
+          {
+            path: '',
+            data: {
+              menu: {
+                title: 'Angular Features ',
+                url: 'https://angular.io/features.html',
+                target: '_blank',
+              }
+            }
+          },
+          {
+            path: '',
+            data: {
+              menu: {
+                title: 'Angular Docs ',
+                url: 'https://angular.io/docs/ts/latest/',
+                target: '_blank',
+              }
+            },
+          }
+        ]
+      },
+      {
+        path: '',
+        data: {
+          menu: {
+            title: 'Training Sites',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 800,
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+
+          }
+        },
+        children: [
+          {
+            path: '',
+            data: {
+              menu: {
+                title: 'PluralSight ',
+                url: 'https://app.pluralsight.com/library/',
+                target: '_blank',
+              }
+            }
+          },
+          {
+            path: '',
+            data: {
+              menu: {
+                title: 'CSS Tricks ',
+                url: 'https://css-tricks.com/',
+                target: '_blank',
+              }
+            },
+          },
+          {
+            path: '',
+            data: {
+              menu: {
+                title: 'Angular ',
+                url: 'https://github.com/angular/angular.js/wiki/Training-Courses',
+                target: '_blank',
+              }
+            },
+          }
+        ]
+      },
+      {
+        path: '',
+        data: {
+          menu: {
+            title: 'Liaison Intl',
+            url: 'http://www.liaisonedu.com/',
+            icon: 'ion-android-exit',
+            order: 800,
+            target: '_blank',
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+          }
+        }
       }
     ]
   }
