@@ -1,6 +1,7 @@
-<button><a href="http://angular2styleguide.com/" target="_blank" style="font-weight: bold; font-size: 24px; color: #0a4d85">View Demo </a> </button>
+### **View Demo here** [Liaison Style Guide](http://angular2styleguide.com/).
 
-<h1>Liaison Style Guide App built using Angular 2 and Bootstrap 4 </h1>
+
+###Liaison Style Guide App built using Angular 2 and Bootstrap 4 ###
 <h3>Installation Guidelines</h3>
 <p>Despite BlurAdmin can be run without any development experience, it would be much easier if you already have some. In general following instructions allow you to run a local copy on your&nbsp;machine.</p>
 <h3 >Install&nbsp;tools</h3>
