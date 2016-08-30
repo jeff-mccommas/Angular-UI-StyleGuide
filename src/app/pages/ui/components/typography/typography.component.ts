@@ -13,7 +13,7 @@ import {TextColor} from './components/textColor';
   pipes: [BaAppPicturePipe],
   directives: [BaCard, TextSize, Lists, MoreText, TextColor],
   providers: [],
-  styles: [],
+  styles: [require('./typography.scss')],
   template: require('./typography.html'),
 })
 export class Typography {
