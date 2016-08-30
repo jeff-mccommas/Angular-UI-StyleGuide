@@ -1,3 +1,4 @@
+<button><a href="http://angular2styleguide.com/" target="_blank" style="font-weight: bold; font-size: 24px; color: #0a4d85">View Demo </a> </button>
 
 <h1>Liaison Style Guide App built using Angular 2 and Bootstrap 4 </h1>
 <h3>Installation Guidelines</h3>
