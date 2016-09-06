@@ -6,7 +6,7 @@ import {Pages} from './pages.component';
 import {Ui} from './ui/ui.component';
 import {Typography} from './ui/components/typography/typography.component';
 import {Buttons} from './ui/components/buttons/buttons.component';
-import {Icons} from './ui/components/incons/icons.component';
+import {Icons} from './ui/components/icons/icons.component';
 import {Grid} from './ui/components/grid/grid.component';
 import {Forms} from './forms/forms.component';
 import {Inputs} from './forms/components/inputs/inputs.component';
