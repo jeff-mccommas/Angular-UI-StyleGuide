@@ -19,7 +19,7 @@
 </li>
 </ul>
 <h2 id="clone-repository-and-install-dependencies">Clone repository and install&nbsp;dependencies</h2>
-<p>You will need to clone the source code of ng2-admin GitHub&nbsp;repository:</p>
+<p>You will need to clone the source code of Liaison-Angular-StyleGuide GitHub&nbsp;repository:</p>
 git clone https://github.com/Liaison-Intl/Liaison-Angular-StyleGuide.git
 
 <p>After repository is cloned, go inside of the repository directory and install&nbsp;dependencies:</p>
