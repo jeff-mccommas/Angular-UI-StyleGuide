@@ -228,12 +228,20 @@ button.btn.btn-remove {
   background: none;
   outline: none;
   box-shadow: none;
+  text-align: left;
+  margin: 5px 0;
+  font-family : Museo Sans;
+  font-size : 16px;
+  line-height : 16px;
+  color : #2B80CF;
+  text-transform: uppercase !important;
 }
 button.btn.btn-copy {
   color: #2a7fce !important;
   background: none !important;
   outline: none;
   box-shadow: none;
+
 }
 
 
@@ -268,6 +276,11 @@ button.btn.btn-copy {
 .button-wrapper.text {
   text-align: left;
   margin: 5px 0;
+  font-family : Museo Sans;
+  font-size : 22px;
+  line-height : 42px;
+  color : #2B80CF;
+  text-transform: capitalize !important;
 }
           *, *::before, *::after {
             box-sizing: inherit;
