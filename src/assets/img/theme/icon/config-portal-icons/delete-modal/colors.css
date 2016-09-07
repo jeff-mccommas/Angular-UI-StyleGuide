@@ -1,0 +1,8 @@
+@charset "utf-8";
+	.delete-confirm
+{
+	background-image : url(delete-confirm.png);
+	background-repeat : no-repeat;
+	width : 299px;
+	height : 143px;
+}
