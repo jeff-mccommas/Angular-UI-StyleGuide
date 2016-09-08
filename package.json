@@ -44,7 +44,7 @@
     "mongodb": "*",
     "mongoose": "*",
     "morgan": "*",
-    "ng2-bootstrap": "^1.0.20",
+    "ng2-bootstrap": "^1.1.1",
     "ng2-branchy": "^0.0.2-5",
     "ng2-ckeditor": "^1.0.4",
     "ng2-cookies": "^0.1.9",
