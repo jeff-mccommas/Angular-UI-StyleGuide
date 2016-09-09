@@ -22,6 +22,7 @@ import {Editors} from './editors/editors.component';
 import {Ckeditor} from './editors/components/ckeditor/ckeditor.component';
 import {Components} from './components/components.component';
 import {TreeView} from './components/components/treeView/treeView.component';
+import {Alerts} from "./ui/components/alerts/alerts.component";
 let apps = {
   configui: "configui",
   applicantGateway: "applicant-gateway",
@@ -161,6 +162,15 @@ export const PagesRoutes:RouterConfig = [
             data: {
               menu: {
                 title: 'Icons',
+              }
+            }
+          },
+          {
+            path: 'alerts',
+            component:Alerts,
+            data: {
+              menu: {
+                title: 'Alerts',
               }
             }
           },
