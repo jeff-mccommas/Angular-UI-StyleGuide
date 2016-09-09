@@ -59,7 +59,7 @@ export const PagesRoutes:RouterConfig = [
             selected: false,
             expanded: false,
             order: 100,
-            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
+            allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         },
         children: [
@@ -68,7 +68,7 @@ export const PagesRoutes:RouterConfig = [
             component: Ckeditor,
             data: {
               menu: {
-                title: 'CKEditor',
+                title: 'Text Editor',
               }
             }
           }
