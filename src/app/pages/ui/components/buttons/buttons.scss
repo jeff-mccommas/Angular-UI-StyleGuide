@@ -285,3 +285,194 @@ button.btn.btn-copy {
           *, *::before, *::after {
             box-sizing: inherit;
           }
+//button states
+.btn-states{
+  width: 523px;
+  height: 73px;
+  position: relative;
+}
+//text button
+.btn-state-hover {
+  font-family: Museo Sans;
+  font-size: 22px;
+  color: #2b80cf;
+  font-weight: 300;
+  text-transform: uppercase;
+  background : #91C8F2;
+  position : absolute;
+  left : 14px;
+  top : 42px;
+  width : 129px;
+  height : 30px;
+  padding: 7px;
+  text-align: center;
+}
+.btn-state-hover:before{
+  font-family: FontAwesome;
+  content: '\f067';
+  color: #231f20;
+  font-size:18px;
+}
+.btn-state-txt
+{
+  font-family : Museo Sans;
+  font-size : 22px;
+  color : #000;
+  font-weight: 300;
+  text-transform: uppercase;
+  position : absolute;
+  left : 14px;
+  top : 8px;
+}
+.btn-state-txt:before{
+  font-family: FontAwesome;
+  content: '\f067';
+  color: #2b80cf;
+  font-size:18px;
+}
+//save button
+.btn-state-save
+{
+  font-family : Museo Sans;
+  font-size : 22px;
+  color : #2b80cf;
+  background : #BFE4FF;
+  font-weight: 300;
+  text-transform: uppercase;
+  position : absolute;
+  left : 146px;
+  top : 0px;
+  width : 97px;
+  height : 30px;
+  padding: 7px;
+  text-align: center;
+}
+.btn-state-save:before{
+  font-family: FontAwesome;
+  content: '\f00c';
+  color: #2b80cf;
+  font-size:18px;
+}
+.btn-state-save-hover {
+  font-family: Museo Sans;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  background : #2b80cf;
+  position : absolute;
+  left : 146px;
+  top : 41px;
+  width : 97px;
+  height : 30px;
+  padding: 7px;
+  text-align: center;
+}
+.btn-state-save-hover:before{
+  font-family: FontAwesome;
+  content: '\f00c';
+  color: #fff;
+  font-size:18px;
+}
+
+
+
+
+//delete button
+.btn-state-cancel
+{
+  font-family : Museo Sans;
+  font-size : 22px;
+  color : #595959;
+  font-weight: 300;
+  text-transform: uppercase;
+  position : absolute;
+  left : 258px;
+  top : 8px;
+  width : 129px;
+  height : 30px;
+  text-align: center;
+}
+.btn-state-cancel:before{
+  font-family: FontAwesome;
+  content: '\f067';
+  color: #595959;
+  font-size:18px;
+}
+.btn-state-cancel-hover {
+  font-family: Museo Sans;
+  font-size: 22px;
+  color: #595959;
+  font-weight: 300;
+  text-transform: uppercase;
+  background : #b2b2b2;
+  position : absolute;
+  left : 258px;
+  top : 42px;
+  width : 129px;
+  height : 30px;
+  padding: 7px;
+  text-align: center;
+}
+.btn-state-cancel-hover:before{
+  font-family: FontAwesome;
+  content: '\f067';
+  color: #595959;
+  font-size:18px;
+}
+//delete button
+.btn-state-delete
+{
+  font-family : Museo Sans;
+  font-size : 22px;
+  color : #dd4509;
+  font-weight: 300;
+  text-transform: uppercase;
+  position : absolute;
+  left : 401px;
+  top : 8px;
+  width : 129px;
+  height : 30px;
+  text-align: center;
+}
+.btn-state-delete:before{
+  font-family: FontAwesome;
+  content: '\f1f8';
+  color: #dd4509;
+  font-size:18px;
+}
+.btn-state-delete-hover {
+  font-family: Museo Sans;
+  font-size: 22px;
+  color: #dd4509;
+  font-weight: 300;
+  text-transform: uppercase;
+  background : #F1B59D;
+  position : absolute;
+  left : 401px;
+  top : 42px;
+  width : 129px;
+  height : 30px;
+  padding: 7px;
+  text-align: center;
+}
+.btn-state-delete-hover:before {
+  font-family: FontAwesome;
+  content: '\f1f8';
+  color: #dd4509;
+  font-size: 18px;
+
+}
+
+
+.btn-states >h6{
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    font-weight: 100;
+    font-family: Museo Sans-serif;
+
+
+}
+
