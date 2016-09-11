@@ -1,5 +1,4 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-import { CollapseDirective } from 'ng2-bootstrap/components/collapse';
 import {BaCard} from '../../../../theme/components';
 import {TextButtons} from './components/textButtons';
 import {FlatButtons} from './components/flatButtons';
@@ -14,7 +13,6 @@ import {HttpService} from './../../../../shared/services/http.service';
     TextButtons,
     FlatButtons,
     GroupButtons,
-    CollapseDirective
   ],
   styles: [require('./buttons.scss')],
   template: require('./buttons.html'),
