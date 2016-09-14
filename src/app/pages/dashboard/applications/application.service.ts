@@ -2,10 +2,20 @@ import {Injectable} from '@angular/core';
 import {BaThemeConfigProvider, colorHelper} from '../../../theme';
 
 @Injectable()
-export class ApplicationService {
-
+export class ApplicationService {    
+    selectedAppKey = "styleguide_selectedApp";
     constructor(private _baConfig: BaThemeConfigProvider) {
     }
+
+    setSelectedApp = function (data) {
+        if (data) {
+            localStorage.setItem(this.selectedAppKey, JSON.stringify(data));
+        }
+    };
+
+    getSelectedApp = function () {
+        return JSON.parse(localStorage.getItem(this.selectedAppKey));
+    };
 
     getApplications() {
         return [

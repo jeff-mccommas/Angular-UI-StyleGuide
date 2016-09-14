@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'group-buttons',
+  selector: 'configui-group-buttons',
   template: require('./groupButtons.html'),
 })
-export class GroupButtons {
+export class ConfigUiGroupButtons {
 
   constructor() {
   }

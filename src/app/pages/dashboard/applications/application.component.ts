@@ -4,11 +4,11 @@ import {Router} from '@angular/router';
 import { TAB_DIRECTIVES } from 'ng2-bootstrap/ng2-bootstrap';
 import {BaCard} from '../../../theme/components';
 import {AppState} from '../../../app.state';
-import {ApplicationService} from './application.service'; 
-import {ConfigUi} from './configui/configUi.component'; 
-import {ApplicantGateway} from './applicantGateway/applicantGateway.component'; 
-import {ApplicantUx} from './applicantUx/applicantUx.component'; 
-import {Evaluator} from './evaluator/evaluator.component'; 
+import {ApplicationService} from './application.service';
+import {ConfigUi} from './configui/configUi.component';
+import {ApplicantGateway} from './applicantGateway/applicantGateway.component';
+import {ApplicantUx} from './applicantUx/applicantUx.component';
+import {Evaluator} from './evaluator/evaluator.component';
 
 @Component({
   selector: 'applications',
@@ -20,16 +20,18 @@ import {Evaluator} from './evaluator/evaluator.component';
 })
 export class Applications {
   public applications: Array<Object>;
-  selectedApp; 
+  selectedApp;
   constructor(private _applicationService: ApplicationService, private _router: Router, private _state: AppState) {
     this.applications = this._applicationService.getApplications();
-    this.selectedApp = this.applications[0]; 
-  } 
+    this.selectedApp = this.applications[0];
+    this._applicationService.setSelectedApp(this.selectedApp);
+  }
   ngAfterViewInit() {
   }
 
   navigatetoApp(app) {
-    this.selectedApp = app;  
+    this.selectedApp = app;
+    this._applicationService.setSelectedApp(app);
     this._state.notifyDataChanged('application.selected', this.selectedApp);
   }
 

@@ -13,7 +13,7 @@ export class CookieService {
     deleteTokenAndUserId = function () {
         Cookie.delete(this.prefix + this.tokenKey);
         Cookie.delete(this.prefix + this.userIdKey);
-    }
+    };
     setCookie = function (cookieKey, cookieValue) {
         Cookie.set(this.prefix + cookieKey, cookieValue);
     };
@@ -22,5 +22,5 @@ export class CookieService {
     };
     deleteCookie = function (cookieKey) {
         Cookie.delete(this.prefix + cookieKey);
-    }
+    };
 }

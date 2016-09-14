@@ -13,5 +13,5 @@ export class UserService {
     }
     removeUser = function () {
         return localStorage.removeItem(this.userdataKey);
-    } 
+    }
 }
