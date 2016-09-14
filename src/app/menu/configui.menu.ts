@@ -28,6 +28,10 @@ export const configuiMenuItems = [
         component: 'Icons',
       },
       {
+        title: 'Alerts',
+        component: 'Alerts',
+      },
+      {
         title: 'Grid',
         component: 'Grid',
       },

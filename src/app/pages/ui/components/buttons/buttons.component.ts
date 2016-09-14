@@ -5,10 +5,13 @@ import {ApplicationService} from './../../../dashboard/applications/application.
 import {ConfigUiTextButtons} from './components/configui/textButtons';
 import {ConfigUiFlatButtons} from './components/configui/flatButtons';
 import {ConfigUiGroupButtons} from './components/configui/groupButtons';
+import {ConfigUiButtonStates} from './components/configui/buttonStates';
+import {ApplicantUxButtonStates} from './components/applicant-ux/buttonStates';
 import {ApplicantUxTextButtons} from './components/applicant-ux/textButtons';
 import {ApplicantUxFlatButtons} from './components/applicant-ux/flatButtons';
 import {ApplicantUxGroupButtons} from './components/applicant-ux/groupButtons';
 import {HttpService} from './../../../../shared/services/http.service';
+import {ButtonStates} from "./components/buttonStates/buttonStates.component";
 
 @Component({
   selector: 'buttons',
@@ -18,6 +21,8 @@ import {HttpService} from './../../../../shared/services/http.service';
     ConfigUiTextButtons,
     ConfigUiFlatButtons,
     ConfigUiGroupButtons,
+    ConfigUiButtonStates,
+    ApplicantUxButtonStates,
     ApplicantUxFlatButtons,
     ApplicantUxTextButtons,
     ApplicantUxGroupButtons,
@@ -32,6 +37,7 @@ export class Buttons {
   textbuttonshtml: string;
   groupbuttonshtml: string;
   flatButtonshtml: string;
+  stateButtonshtml: string;
   constructor(private _applicationService: ApplicationService) {
     this.selectedApp = this._applicationService.getSelectedApp();
     switch (this.selectedApp.key) {
@@ -39,6 +45,7 @@ export class Buttons {
         this.textbuttonshtml = require('./components/configui/textButtons/textButtons.html');
         this.groupbuttonshtml = require('./components/configui/groupButtons/groupButtons.html');
         this.flatButtonshtml = require('./components/configui/flatButtons/flatButtons.html');
+        this.stateButtonshtml = require('./components/configui/buttonStates/buttonStates.html');
         break;
       case "applicant-gateway":
         break;
@@ -48,6 +55,7 @@ export class Buttons {
         this.textbuttonshtml = require('./components/applicant-ux/textButtons/textButtons.html');
         this.groupbuttonshtml = require('./components/applicant-ux/groupButtons/groupButtons.html');
         this.flatButtonshtml = require('./components/applicant-ux/flatButtons/flatButtons.html');
+        this.stateButtonshtml = require('./components/applicant-ux/buttonStates/buttonStates.html');
         break;
     }
   }

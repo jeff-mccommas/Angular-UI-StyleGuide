@@ -1,0 +1,87 @@
+@charset "utf-8";
+	.None
+{
+	font-family : Museo Sans;
+	font-size : 22px;
+	line-height : 42px;
+	color : #231F20;
+	color : rgb(35, 31, 32);
+}
+.btn-save-hvr_1_
+{
+	background : #BFE4FF;
+	background : rgba(191, 228, 255, 1);
+	position : absolute ;
+	left : 147px;
+	top : 0px;
+	width : 97px;
+	height : 30px;
+}
+.btn-save-active_1_
+{
+	background : #2B80CF;
+	background : rgba(43, 128, 207, 1);
+	position : absolute ;
+	left : 147px;
+	top : 42px;
+	width : 97px;
+	height : 30px;
+}
+.btn-cancel-hvr_1_
+{
+	background : #B2B2B2;
+	background : rgba(178, 178, 178, 1);
+	position : absolute ;
+	left : 258px;
+	top : 42px;
+	width : 129px;
+	height : 30px;
+}
+
+.delete-btn-hvr_1_
+{
+	background : #F1B59D;
+	background : rgba(241, 181, 157, 1);
+	position : absolute ;
+	left : 402px;
+	top : 42px;
+	width : 123px;
+	height : 30px;
+}
+
+
+.st0
+{
+	background : #2B80CF;
+	background : rgba(43, 128, 207, 1);
+	position : absolute ;
+	left : 157px;
+	top : 8px;
+	width : 16px;
+	height : 13px;
+}
+
+.NormalCharacterStyle1
+{
+	font-family : Museo Sans;
+	font-size : 22px;
+	line-height : 42px;
+	color : #595959;
+	color : rgb(89, 89, 89);
+}
+.NormalCharacterStyle2
+{
+	font-family : Museo Sans;
+	font-size : 22px;
+	line-height : 42px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+.NormalCharacterStyle
+{
+	font-family : Museo Sans;
+	font-size : 22px;
+	line-height : 42px;
+	color : #DD4509;
+	color : rgb(221, 69, 9);
+}

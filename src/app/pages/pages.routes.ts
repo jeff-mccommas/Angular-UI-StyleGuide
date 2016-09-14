@@ -1,7 +1,5 @@
 import {RouterConfig} from '@angular/router';
 import {Dashboard} from './dashboard/dashboard.component';
-import {Charts} from './charts/charts.component';
-import {ChartistJs} from './charts/components/chartistJs/chartistJs.component';
 import {Pages} from './pages.component';
 import {Ui} from './ui/ui.component';
 import {Typography} from './ui/components/typography/typography.component';
@@ -13,15 +11,8 @@ import {Inputs} from './forms/components/inputs/inputs.component';
 import {Layouts} from './forms/components/layouts/layouts.component';
 import {BasicTables} from './tables/components/basicTables/basicTables.component';
 import {Tables} from './tables/tables.component';
-import {Maps} from './maps/maps.component';
-import {GoogleMaps} from './maps/components/googleMaps/googleMaps.component';
-import {LeafletMaps} from './maps/components/leafletMaps/leafletMaps.component';
-import {BubbleMaps} from './maps/components/bubbleMaps/bubbleMaps.component';
-import {LineMaps} from './maps/components/lineMaps/lineMaps.component';
-import {Editors} from './editors/editors.component';
-import {Ckeditor} from './editors/components/ckeditor/ckeditor.component';
 import {Components} from './components/components.component';
-import {TreeView} from './components/components/treeView/treeView.component';
+import {Alerts} from "./ui/components/alerts/alerts.component";
 let apps = {
   configui: "configui",
   applicantGateway: "applicant-gateway",
@@ -47,31 +38,7 @@ export const PagesRoutes:RouterConfig = [
             allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         }
-      },
-      {
-        path: 'editors',
-        component: Editors,
-        data: {
-          menu: {
-            title: 'Editors',
-            icon: 'ion-edit',
-            selected: false,
-            expanded: false,
-            order: 100,
-            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
-          }
-        },
-        children: [
-          {
-            path: 'ckeditor',
-            component: Ckeditor,
-            data: {
-              menu: {
-                title: 'CKEditor',
-              }
-            }
-          }
-        ]
+
       },
       {
         path: 'components',
@@ -83,45 +50,9 @@ export const PagesRoutes:RouterConfig = [
             selected: false,
             expanded: false,
             order: 250,
-           // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
-          }
-        },
-        children: [
-          {
-            path: 'treeview',
-            component: TreeView,
-            data: {
-              menu: {
-                title: 'Tree View',
-              }
-            }
-          }
-        ]
-      },
-      {
-        path: 'charts',
-        component: Charts,
-        data: {
-          menu: {
-            title: 'Charts',
-            icon: 'ion-stats-bars',
-            selected: false,
-            expanded: false,
-            order: 200,
             // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
-        },
-        children: [
-          {
-            path: 'chartist-js',
-            component: ChartistJs,
-            data: {
-              menu: {
-                title: 'Chartist.Js',
-              }
-            }
-          }
-        ]
+        }
       },
       {
         path: 'ui',
@@ -161,6 +92,15 @@ export const PagesRoutes:RouterConfig = [
             data: {
               menu: {
                 title: 'Icons',
+              }
+            }
+          },
+          {
+            path: 'alerts',
+            component:Alerts,
+            data: {
+              menu: {
+                title: 'Alerts',
               }
             }
           },
@@ -233,58 +173,7 @@ export const PagesRoutes:RouterConfig = [
             }
           }
         ]
-      },
-      {
-        path: 'maps',
-        component: Maps,
-        data: {
-          menu: {
-            title: 'Maps',
-            icon: 'ion-ios-location-outline',
-            selected: false,
-            expanded: false,
-            order: 600,
-            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
-          }
-        },
-        children: [
-          {
-            path: 'googlemaps',
-            component: GoogleMaps,
-            data: {
-              menu: {
-                title: 'Google Maps',
-              }
-            }
-          },
-          {
-            path: 'leafletmaps',
-            component: LeafletMaps,
-            data: {
-              menu: {
-                title: 'Leaflet Maps',
-              }
-            }
-          },
-          {
-            path: 'bubblemaps',
-            component: BubbleMaps,
-            data: {
-              menu: {
-                title: 'Bubble Maps',
-              }
-            }
-          },
-          {
-            path: 'linemaps',
-            component: LineMaps,
-            data: {
-              menu: {
-                title: 'Line Maps',
-              }
-            }
-          }
-        ]
+
       },
       {
         path: '',

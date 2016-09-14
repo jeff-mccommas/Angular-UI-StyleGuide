@@ -1,12 +1,12 @@
 import {Component, ViewEncapsulation, Input} from '@angular/core';
-import { CollapseDirective, MODAL_DIRECTIVES, BS_VIEW_PROVIDERS } from 'ng2-bootstrap/ng2-bootstrap';
+import { MODAL_DIRECTIVES, BS_VIEW_PROVIDERS } from 'ng2-bootstrap/ng2-bootstrap';
 import {BaCardBlur} from './baCardBlur.directive';
 import {CopyClipboardService} from './../../../shared/services/copyclipboard.service';
 
 @Component({
   selector: 'ba-card',
   styles: [require('./baCard.scss')],
-  directives: [BaCardBlur, CollapseDirective, MODAL_DIRECTIVES],
+  directives: [BaCardBlur, MODAL_DIRECTIVES],
   viewProviders: [BS_VIEW_PROVIDERS],
   providers: [CopyClipboardService],
   template: require('./baCard.html'),

@@ -1,0 +1,115 @@
+@charset "utf-8";
+	.delete-btn-hvr
+{
+	background : #F1B59D;
+	width : 123px;
+	height : 30px;
+}
+.None
+{
+	font-family : Museo Sans;
+	font-size : 22px;
+	line-height : 42px;
+	color : #231F20;
+}
+.btn-tex
+{
+	background : #91C8F2;
+	width : 129px;
+	height : 30px;
+}
+.trash
+{
+	background-image : url('/assets/img/theme/icon/config-portal-icons/btn-states/button-states.pngtrash.png');
+	background-repeat : no-repeat;
+	width : 13px;
+	height : 15px;
+}
+.add_blue
+{
+	background-image : add_blue.png);
+	background-repeat : no-repeat;
+	width : 13px;
+	height : 14px;
+}
+.st0
+{
+	background : #2B80CF;
+	width : 16px;
+	height : 13px;
+}
+.image
+{
+	background-image : url('image.png');
+	background-repeat : no-repeat;
+	width : 13px;
+	height : 14px;
+}
+.btn-save-hvr
+{
+	background : #BFE4FF;
+	background : rgba(191, 228, 255, 1);
+	width : 97px;
+	height : 30px;
+}
+.btn-cancel-hvr
+{
+	background : #B2B2B2;
+	background : rgba(178, 178, 178, 1);
+	width : 129px;
+	height : 30px;
+}
+.add-black
+{
+	background-image : url('/assets/img/theme/icon/config-portal-icons/btn-states/add-black.png');
+	background-repeat : no-repeat;
+	width : 13px;
+	height : 14px;
+}
+.st1
+{
+	background : #FFFFFF;
+	width : 16px;
+	height : 13px;
+}
+.NormalCharacterStyle1
+{
+	font-family : Museo Sans;
+	font-size : 22px;
+	line-height : 42px;
+	color : #595959;
+}
+.btn-add-cancel-active
+{
+	background-image : url('/assets/img/theme/icon/config-portal-icons/btn-states/btn-add-cancel-active.png');
+	background-repeat : no-repeat;
+	width : 14px;
+	height : 14px;
+}
+.btn-save-active
+{
+	background : #2B80CF;
+	width : 97px;
+	height : 30px;
+}
+.NormalCharacterStyle2
+{
+	font-family : Museo Sans;
+	font-size : 22px;
+	line-height : 42px;
+	color : #FFFFFF;
+}
+.NormalCharacterStyle
+{
+	font-family : Museo Sans;
+	font-size : 22px;
+	line-height : 42px;
+	color : #DD4509;
+}
+.btn-add-cancel-hover
+{
+	background-image : url('/assets/img/theme/icon/config-portal-icons/btn-states/btn-add-cancel-hover.png');
+	background-repeat : no-repeat;
+	width : 14px;
+	height : 15px;
+}
