@@ -11,7 +11,6 @@ import {ApplicantUxTextButtons} from './components/applicant-ux/textButtons';
 import {ApplicantUxFlatButtons} from './components/applicant-ux/flatButtons';
 import {ApplicantUxGroupButtons} from './components/applicant-ux/groupButtons';
 import {HttpService} from './../../../../shared/services/http.service';
-import {ButtonStates} from "./components/buttonStates/buttonStates.component";
 
 @Component({
   selector: 'buttons',
