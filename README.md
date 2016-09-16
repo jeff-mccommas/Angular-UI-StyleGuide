@@ -26,7 +26,7 @@ git clone https://github.com/Liaison-Intl/Liaison-Angular-StyleGuide.git
 cd Liaison-Admin-Style-Guide
 <pre> npm install</pre>
 <pre> npm start</pre>
-<pre> **if you get errors run this command npm install  ng2-bootstrap@1.0.20**</pre>
+>if you get errors, >run this command npm install  ng2-bootstrap@1.0.20
 Open new terminal window and run: 
 <p>This will setup a working copy of Liaison-Admin-Style-Guide on your local&nbsp;machine.</p>
 <h2 id="running-local-copy">Running local&nbsp;copy</h2>
