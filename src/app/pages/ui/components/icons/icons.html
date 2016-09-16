@@ -1,10 +1,21 @@
 <div class="widgets">
   <div class="row">
-    <div class="col-md-6">
-      <ba-card source="true" sourcehtml="{{spriteiconshtml}}" title="Configuration Manager Icons" baCardClass="with-scroll">
-        <sprite-icons></sprite-icons>
-      </ba-card>
+    <div *ngIf="selectedApp.key == 'configui'">
+      <div class="col-md-6">
+        <ba-card source="true" sourcehtml="{{configuiSpriteIconsHtml}}" title="Configuration Manager Icons" baCardClass="with-scroll">
+          <configui-sprite-icons></configui-sprite-icons>
+        </ba-card>
+      </div>
     </div>
+
+      <div *ngIf="selectedApp.key == 'applicant-ux'">
+      <div class="col-md-6">
+        <ba-card source="true" sourcehtml="{{applicantUxcasIconsHtml}}" title="Applicant UX Icons" baCardClass="with-scroll">
+          <applicantux-cas-icons></applicantux-cas-icons>
+        </ba-card>
+      </div>
+    </div>
+
     <div class="col-md-6">
       <ba-card source="true" sourcehtml="{{fonticonshtml}}" title="Font Awesome Icons" baCardClass="with-scroll">
         <font-icons></font-icons>
