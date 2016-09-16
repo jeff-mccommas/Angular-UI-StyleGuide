@@ -11,12 +11,11 @@ import {Inputs} from './forms/components/inputs/inputs.component';
 import {Layouts} from './forms/components/layouts/layouts.component';
 import {BasicTables} from './tables/components/basicTables/basicTables.component';
 import {Tables} from './tables/tables.component';
-import {Components} from './components/components.component';
 import {Alerts} from "./ui/components/alerts/alerts.component";
 let apps = {
   configui: "configui",
   applicantGateway: "applicant-gateway",
-  evaluator: "evaluator",
+  evaluator: "evaluator", 
   applicantUx: "applicant-ux"
 };
 //noinspection TypeScriptValidateTypes
@@ -39,21 +38,7 @@ export const PagesRoutes:RouterConfig = [
           }
         }
 
-      },
-      {
-        path: 'components',
-        component: Components,
-        data: {
-          menu: {
-            title: 'Components',
-            icon: 'ion-gear-a',
-            selected: false,
-            expanded: false,
-            order: 250,
-            // allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
-          }
-        }
-      },
+      }, 
       {
         path: 'ui',
         component: Ui,
@@ -299,7 +284,7 @@ export const PagesRoutes:RouterConfig = [
             url: 'http://www.liaisonedu.com/',
             icon: 'ion-android-exit',
             order: 800,
-            target: '_blank',
+            target: '_blank', 
             allowedOn: [apps.configui, apps.applicantGateway, apps.applicantUx, apps.evaluator]
           }
         }
