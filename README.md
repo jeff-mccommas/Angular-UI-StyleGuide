@@ -5,7 +5,7 @@
 <h3>Installation Guidelines</h3>
 <p>Despite BlurAdmin can be run without any development experience, it would be much easier if you already have some. In general following instructions allow you to run a local copy on your&nbsp;machine.</p>
 <h3 >Install&nbsp;tools</h3>
-<p>If you don’t have any of these tools installed already, you will need&nbsp;to:</p>
+<p>If you donâ€™t have any of these tools installed already, you will need&nbsp;to:</p>
 <ul>
 <li>Download and install <a href="https://git-scm.com/">git</a></li>
 <li>Download and install nodejs <a href="https://nodejs.org">https://nodejs.org</a></li>
@@ -26,8 +26,6 @@ git clone https://github.com/Liaison-Intl/Liaison-Angular-StyleGuide.git
 cd Liaison-Admin-Style-Guide
 <pre> npm install</pre>
 <pre> npm start</pre>
->if you get errors, 
->run this command npm installng2-bootstrap@1.0.20
 Open new terminal window and run: 
 <p>This will setup a working copy of Liaison-Admin-Style-Guide on your local&nbsp;machine.</p>
 <h2 id="running-local-copy">Running local&nbsp;copy</h2>
