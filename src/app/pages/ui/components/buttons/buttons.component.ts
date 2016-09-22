@@ -1,32 +1,9 @@
-import {Component, ViewEncapsulation} from '@angular/core';
-import {CollapseDirective} from 'ng2-bootstrap/components/collapse';
-import {BaCard} from '../../../../theme/components';
+import { Component, ViewEncapsulation } from '@angular/core';
 import {ApplicationService} from './../../../dashboard/applications/application.service';
-import {ConfigUiTextButtons} from './components/configui/textButtons';
-import {ConfigUiFlatButtons} from './components/configui/flatButtons';
-import {ConfigUiGroupButtons} from './components/configui/groupButtons';
-import {ConfigUiButtonStates} from './components/configui/buttonStates';
-import {ApplicantUxButtonStates} from './components/applicant-ux/buttonStates';
-import {ApplicantUxTextButtons} from './components/applicant-ux/textButtons';
-import {ApplicantUxFlatButtons} from './components/applicant-ux/flatButtons';
-import {ApplicantUxGroupButtons} from './components/applicant-ux/groupButtons';
-import {HttpService} from './../../../../shared/services/http.service';
 
 @Component({
   selector: 'buttons',
   encapsulation: ViewEncapsulation.None,
-  directives: [
-    BaCard,
-    ConfigUiTextButtons,
-    ConfigUiFlatButtons,
-    ConfigUiGroupButtons,
-    ConfigUiButtonStates,
-    ApplicantUxButtonStates,
-    ApplicantUxFlatButtons,
-    ApplicantUxTextButtons,
-    ApplicantUxGroupButtons,
-    CollapseDirective
-  ],
   providers: [ApplicationService],
   styles: [require('./buttons.scss')],
   template: require('./buttons.html'),

@@ -5,7 +5,7 @@
 <h3>Installation Guidelines</h3>
 <p>Despite BlurAdmin can be run without any development experience, it would be much easier if you already have some. In general following instructions allow you to run a local copy on your&nbsp;machine.</p>
 <h3 >Install&nbsp;tools</h3>
-<p>If you donâ€™t have any of these tools installed already, you will need&nbsp;to:</p>
+<p>If you don’t have any of these tools installed already, you will need&nbsp;to:</p>
 <ul>
 <li>Download and install <a href="https://git-scm.com/">git</a></li>
 <li>Download and install nodejs <a href="https://nodejs.org">https://nodejs.org</a></li>

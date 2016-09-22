@@ -1,21 +1,31 @@
 import {Injectable} from '@angular/core';
-import {Router, UrlTree, RouterConfig} from '@angular/router';
+import {Router, Routes} from '@angular/router';
 
 @Injectable()
 export class BaMenuService {
 
+  protected _currentMenuItem = {};
+
   constructor(private _router:Router) {
   }
 
-  public convertRoutesToMenus(routes:RouterConfig):any[] {
+  public convertRoutesToMenus(routes:Routes):any[] {
     let items = this._convertArrayToItems(routes);
     return this._skipEmpty(items);
+  }
+
+  public getCurrentItem():any {
+    return this._currentMenuItem;
   }
 
   public selectMenuItem(menuItems:any[]):any[] {
     let items = [];
     menuItems.forEach((item) => {
       this._selectItem(item);
+
+      if (item.selected) {
+        this._currentMenuItem = item;
+      }
 
       if (item.children && item.children.length > 0) {
         item.children = this.selectMenuItem(item.children);
@@ -87,7 +97,7 @@ export class BaMenuService {
     if (!object.skip) {
 
       let itemUrl = this._router.serializeUrl(this._router.createUrlTree(object.route.paths));
-      object.url = object.url ? object.url : '/#' + itemUrl;
+      object.url = object.url ? object.url : '#' + itemUrl;
 
       object.target = object.target || '';
       return this._selectItem(object);
@@ -97,7 +107,7 @@ export class BaMenuService {
   }
 
   protected _selectItem(object:any):any {
-    object.selected = object.url == ('/#' + this._router.url);
+    object.selected = object.url == ('#' + this._router.url);
     return object;
   }
 }

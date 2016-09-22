@@ -1,12 +1,17 @@
 <aside class="al-sidebar" (mouseleave)="hoverElemTop=outOfArea" sidebarResize>
   <ul id="al-sidebar-list" class="al-sidebar-list" baSlimScroll [baSlimScrollOptions]="{height: menuHeight}">
-    <li class="al-sidebar-list-item">
+      <li class="al-sidebar-list-item">
       <a class="al-sidebar-list-link"  target="">
         <i class="chart-icon i-{{selectedApp.icon}}"></i><span>{{selectedApp.name}}</span>
       </a>
 
     </li>
-    <ba-menu-item [menuItem]="item" (itemHover)="hoverItem($event)" (toggleSubMenu)="toggleSubMenu($event)" *ngFor="let item of menuItems | menuSearchFilter:searchQuery"></ba-menu-item>
+    <ba-menu-item
+      [menuItem]="item"
+      (itemHover)="hoverItem($event)"
+      (toggleSubMenu)="toggleSubMenu($event)"
+      *ngFor="let item of menuItems"></ba-menu-item>
   </ul>
-  <div class="sidebar-hover-elem" [ngStyle]="{top: hoverElemTop + 'px', height: hoverElemHeight + 'px'}" [ngClass]="{'show-hover-elem': showHoverElem }"></div>
+  <div class="sidebar-hover-elem" [ngStyle]="{top: hoverElemTop + 'px', height: hoverElemHeight + 'px'}"
+       [ngClass]="{'show-hover-elem': showHoverElem }"></div>
 </aside>

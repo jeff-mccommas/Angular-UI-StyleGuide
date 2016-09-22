@@ -1,13 +1,13 @@
 <div baCardBlur class="animated fadeIn card {{cardType}} {{baCardClass || ''}}" zoom-in>
   <div *ngIf="title" class="card-header clearfix">
     <h3 class="card-title">{{title}}</h3>
-    <a *ngIf="source" (click)="lgModal.show()" class="view-source">Source
-                  </a>
+    <a *ngIf="source" (click)="lgModal.show()" class="view-source">Source</a>
   </div>
   <div class="card-body">
     <ng-content></ng-content>
   </div>
 </div>
+<!-- Large modal -->
 <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">

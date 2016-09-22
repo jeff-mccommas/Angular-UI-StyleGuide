@@ -1,12 +1,8 @@
-import {Component, ViewEncapsulation} from '@angular/core';
-import {CORE_DIRECTIVES} from '@angular/common'; 
-import { TAB_DIRECTIVES } from 'ng2-bootstrap/ng2-bootstrap';
+import {Component, ViewEncapsulation} from '@angular/core'; 
 
 @Component({
   selector: 'applicantGateway',
-  encapsulation: ViewEncapsulation.None,
-  directives: [CORE_DIRECTIVES, TAB_DIRECTIVES],
-  providers: [],
+  encapsulation: ViewEncapsulation.None, 
   styles: [require('./applicantGateway.scss')],
   template: require('./applicantGateway.html')
 })
