@@ -1,4 +1,3 @@
-# Created by .ignore support plugin (hsz.mobi)
 # @AngularClass
 
 # Logs
@@ -60,4 +59,3 @@ npm-debug.log
 # IDE #
 .idea/
 *.swp
-/docs/
