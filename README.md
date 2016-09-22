@@ -26,7 +26,6 @@ git clone https://github.com/Liaison-Intl/Liaison-Angular-StyleGuide.git
 cd Liaison-Admin-Style-Guide
 <pre> npm install</pre>
 <pre> npm start</pre>
-Open new terminal window and run: 
 <p>This will setup a working copy of Liaison-Admin-Style-Guide on your local&nbsp;machine.</p>
 <h2 id="running-local-copy">Running local&nbsp;copy</h2>
 <p>To run a local copy in development mode,&nbsp;execute:</p>
