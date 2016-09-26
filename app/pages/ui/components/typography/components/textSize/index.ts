@@ -1,0 +1,1 @@
+export * from './textSize.component';
