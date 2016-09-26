@@ -1,0 +1,103 @@
+///
+.appContainer .card > .card-body {
+    background-color: #209e91;
+    cursor: pointer;
+}
+
+.appContainer .card > .card-body {
+    transition: all .2s ease-in-out;
+}
+
+.appContainer .card > .card-body:hover {
+    transform: scale(1.01);
+}
+
+.application-item {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #209e91;
+}
+
+.description {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.app-name {
+    color: #FFFFFF;
+    font-size: 24px;
+    float: right;
+    padding: 10px;
+}
+
+.i-touch-screen {
+    display: inline-block;
+    background: url("assets/img/touch-screen.svg") no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.i-coffee {
+    display: inline-block;
+    background: url("assets/img/coffee.svg") no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.i-idea {
+    display: inline-block;
+    background: url("assets/img/idea.svg") no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.i-settings {
+    display: inline-block;
+    background: url("assets/img/settings.svg") no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+button.btn.btn-copy {
+  color: #2a7fce !important;
+  background: none !important;
+  outline: none;
+  box-shadow: none;
+}
