@@ -3,7 +3,7 @@
 
 ###Liaison Style Guide App built using Angular 2 and Bootstrap 4 ###
 <h3>Installation Guidelines</h3>
-<p>Despite BlurAdmin can be run without any development experience, it would be much easier if you already have some. In general following instructions allow you to run a local copy on your&nbsp;machine.</p>
+
 <h3 >Install&nbsp;tools</h3>
 <p>If you don’t have any of these tools installed already, you will need&nbsp;to:</p>
 <ul>
