@@ -1,8 +1,6 @@
-import {Component, ViewEncapsulation} from '@angular/core'; 
-import {Router} from '@angular/router'; 
-import {BaCard} from '../../../theme/components';
+import {Component, ViewEncapsulation} from '@angular/core';
+import {Router} from '@angular/router';
 import {GlobalState} from '../../../global.state';
-
 import {ApplicationService} from './application.service';
 
 @Component({

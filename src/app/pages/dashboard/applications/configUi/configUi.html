@@ -5,133 +5,104 @@
   <!--*******************************************-->
   <!--*******************************************-->
   <tab heading="Application Details">
+    <div class="col-md-4">
+      <ba-card title="Flat Buttons" source="true" sourcehtml="{{flatButtonshtml}}" baCardClass="with-scroll button-panel">
+        <Application-Details></Application-Details>
+      </ba-card>
+    </div>
+</tab>
+<!--*******************************************-->
+<!--*******************************************-->
+<!--***************** Code Review and Standards-->
+<!--*******************************************-->
+<!--*******************************************-->
+<tab heading="Code Review and Standards">
+  <div class="col-lg-6 col-md-12">
     <ba-card bacardclass="with-scroll table-panel" ng-reflect-ba-card-class="with-scroll table-panel">
       <div bacardblur="" zoom-in="" ng-reflect-class-name="animated fadeIn card  with-scroll table-panel" class="animated fadeIn card  with-scroll table-panel">
 
         <div class="card-header clearfix">
-          <h3 class="card-title">Liaison Configuration Manager -
-            <small style="text-transform: lowercase; font-weight: 500; font-size: 1em">Information Architecture
-              Interaction Design UI/UX
-            </small>
-          </h3>
+          <h3 class="card-title">Code Review</h3>
 
- 
+
         </div>
         <div class="card-body" style="background-color: white; transform: scale(1);">
 
-          <p>An online system developed to help organizations and institutions customize their applicant-facing CAS (Centralized
-            Application Service) instance, called the Applicant Portal. In the Configuration Manager an administrator of
-            a CAS can create a new application, alter the branding of their application, as well as input what kinds of documents,
-            transcripts, and questions they would like to ask potential applicants to submit.</p>
-          <div class="button-wrapper" style="margin: 11px 20px 20px 300px;">
-            <a style="margin: 20px" href="https://config.liaisoncas.com/configuration/#/cas" target="_blank">
-              <button type="button" class="btn btn-danger">See live Demo</button>
-            </a>
+          <div class="well center-block col-xl-12">
+            <p>
+              A successful peer review strategy for <a href="https://smartbear.com/learn/code-review/what-is-code-review/"
+                target="_blank">code review</a> requires balance between strictly documented processes and a non-threatening,
+              collaborative environment. Highly regimented peer reviews can stifle productivity, yet lackadaisical processes
+              are often ineffective. Managers are responsible for finding a middle ground where peer review can be efficient
+              and effective while fostering open communication and knowledge-share between teammates.
+            </p>
+            <h4>THESE 10 TIPS WILL GUIDE YOU TOWARD EFFECTIVE PEER CODE REVIEW</h4>
+            <h5> 1. Review fewer than 400 lines of code at a time</h5>
+            <p>A study by the Cisco Systems programming team revealed that developers should review no more than 200 to 400
+              lines of code (LOC) at a time. The brain can only effectively process so much information at a time; beyond
+              400 LOC, the ability to find defects diminishes</p>
+            <h4> 2. Take your time. Inspection rates should under 500 LOC per hour</h4>
+            <p>t can be tempting to tear through a review, assuming that someone else will catch the errors that you don´t
+              find. However, SmartBear research shows a significant drop in defect density at rates faster than 500 LOC
+              per hour. Code reviews in reasonable quantity, at a slower pace for a limited amount of time results in the
+              most effective code review.</p>
+            <h4>.3 Do not review for more than 60 minutes at a time</h4>
+            <p>Just as you shouldn´t review code too quickly, you also should not review for too long in one sitting. When
+              people engage in any activity requiring concentrated effort over a period of time, performance starts dropping
+              off after about 60 minutes. Studies show that taking breaks from a task over a period of time can greatly
+              improve quality of work.
+            </p>
+            <h4>4. Set goals and capture metrics</h4>
+            <p>Before implementing a process, your team should decide how you will measure the effectiveness of peer review
+              and name a few tangible goals.
+            </p>
+            <p>Realistically, only automated or strictly controlled processes can provide repeatable metrics. A metrics-driven
+              code review tool gathers data automatically so that your information is accurate and without human bias.</p>
+            <h4> 5. Authors should annotate source code before the review</h4>
+            <p>Authors should annotate code before the review occurs because annotations guide the reviewer through the changes,
+              showing which files to look at first and defending the reason behind each code modification. Annotations
+              should be directed at other reviewers to ease the process and provide more depth in context. As an added
+              benefit, the author will often find additional errors before the peer review even begins. More bugs found
+              prior to peer review will yield in lower defect density because fewer bugs exist overall.
+            </p>
+            <h4> 6. Use checklists</h4>
+            <p>It´s very likely that each person on your team makes the same 10 mistakes over and over. Omissions in particular
+              are the hardest defects to find because it´s difficult to review something that isn´t there. Checklists are
+              the most effective way to eliminate frequently made errors and to combat the challenges of omission finding.</p>
+            <h4>7. Establish a process for fixing defects found</h4>
+            <p>Even after optimizing code review processes by time-boxing reviews, limiting LOC reviewed per hour and naming
+              key metrics for your team, there´s still a key review step missing. How will the bugs be fixed? It seems
+              obvious, but many teams do not have a systematic method for fixing the bugs they´ve worked so hard to find.</p>
+            <p>The best way to ensure that defects are fixed is to use a <a href="https://smartbear.com/product/collaborator/overview/"
+                target="_blank"><b>collaborative
+              code review tool</b></a> that allows reviewers to log bugs, discuss them with the author, and approve changes
+              in the code. Without an automated tool, bugs found in review likely aren´t logged in the team´s usual defect
+              tracking system because they are found before code is released to QA.
+            </p>
+            <h4>8. Foster a positive code review culture</h4>
+            <p>Peer review can put strain on interpersonal team relationships. It´s difficult to have every piece of work
+              critiqued by peers and to have management evaluating and measuring defect density in your code. Therefore,
+              in order for peer code review to be successful, it´s extremely important that mangers create a culture of
+              collaboration and learning in peer review</p>
+            <p>While it´s easy to see defects as purely negative, each bug is actually an opportunity for the team to improve
+              code quality. Peer review also allows junior team members to learn from senior leaders and for even the most
+              experienced programmers to break bad habits.</p>
+            <p>Defects found in peer review are not an acceptable rubric by which to evaluate team members. Reports pulled
+              from peer code reviews should never be used in performance reports. If personal metrics become a basis for
+              compensation or promotion, developers will become hostile toward the process and naturally focus on improving
+              personal metrics rather than writing better overall code.</p>
+            <h4>9. Embrace the subconscious implications of peer review</h4>
+            <p>The knowledge that others will be examining their work naturally drives people to produce a better product.
+              This "Ego Effect" naturally incentivizes developers to write cleaner code because their peers will certainly
+              see it. The SmartBear study of Cisco Systems found that "spot checking" 20% to 33% of the code resulted in
+              lower defect density with minimal time expenditure. If your code has a 1-in-3 chance of being called out
+              for review, that´s enough of an incentive to double-check your work.</p>
+            <h4>10. Practice lightweight code reviews</h4>
+            <p>Between email, over-the-shoulder, Microsoft Word, tool-assisted and hybrids of all types there are countless
+              ways to collaboratively review code. However, to fully optimize your team´s time and to effectively measure
+              its results, a lightweight, tool-assisted process is recommended.</p>
+
           </div>
-          <p>This product is a part of <a href="http://www.liaison-intl.com/" target="_blank">Liaison International</a>, and
-            works in conjunction with the Applicant Portal and Applicant Gateway.</p>
-          <img class="img-responsive" src="assets/img/config portal.png" alt="Liaison Configuration Manager">
-          <img class="img-responsive" src="assets/img/config portal2.png" alt="Liaison Configuration Manager">
-          <img class="img-responsive" src="assets/img/config portal3.png" alt="Liaison Configuration Manager">
-          <img class="img-responsive" src="assets/img/config portal4.png" alt="Liaison Configuration Manager">
-          <img class="img-responsive" src="assets/img/config portal6.png" alt="Liaison Configuration Manager">
-        </div>
-      </div>
-
-    </ba-card>
-  </tab>
-  <!--*******************************************-->
-  <!--*******************************************-->
-  <!--***************** Code Review and Standards-->
-  <!--*******************************************-->
-  <!--*******************************************-->
-  <tab heading="Code Review and Standards">
-    <div class="col-lg-6 col-md-12">
-      <ba-card bacardclass="with-scroll table-panel" ng-reflect-ba-card-class="with-scroll table-panel">
-        <div bacardblur="" zoom-in="" ng-reflect-class-name="animated fadeIn card  with-scroll table-panel" class="animated fadeIn card  with-scroll table-panel">
-
-          <div class="card-header clearfix">
-            <h3 class="card-title">Code Review</h3>
-
-
-          </div>
-          <div class="card-body" style="background-color: white; transform: scale(1);">
-
-            <div class="well center-block col-xl-12">
-              <p>
-                A successful peer review strategy for <a href="https://smartbear.com/learn/code-review/what-is-code-review/"
-                  target="_blank">code review</a> requires balance between strictly documented processes and a non-threatening,
-                collaborative environment. Highly regimented peer reviews can stifle productivity, yet lackadaisical processes
-                are often ineffective. Managers are responsible for finding a middle ground where peer review can be efficient
-                and effective while fostering open communication and knowledge-share between teammates.
-              </p>
-              <h4>THESE 10 TIPS WILL GUIDE YOU TOWARD EFFECTIVE PEER CODE REVIEW</h4>
-              <h5> 1. Review fewer than 400 lines of code at a time</h5>
-              <p>A study by the Cisco Systems programming team revealed that developers should review no more than 200 to 400
-                lines of code (LOC) at a time. The brain can only effectively process so much information at a time; beyond
-                400 LOC, the ability to find defects diminishes</p>
-              <h4> 2. Take your time. Inspection rates should under 500 LOC per hour</h4>
-              <p>t can be tempting to tear through a review, assuming that someone else will catch the errors that you don´t
-                find. However, SmartBear research shows a significant drop in defect density at rates faster than 500 LOC
-                per hour. Code reviews in reasonable quantity, at a slower pace for a limited amount of time results in the
-                most effective code review.</p>
-              <h4>.3 Do not review for more than 60 minutes at a time</h4>
-              <p>Just as you shouldn´t review code too quickly, you also should not review for too long in one sitting. When
-                people engage in any activity requiring concentrated effort over a period of time, performance starts dropping
-                off after about 60 minutes. Studies show that taking breaks from a task over a period of time can greatly
-                improve quality of work.
-              </p>
-              <h4>4. Set goals and capture metrics</h4>
-              <p>Before implementing a process, your team should decide how you will measure the effectiveness of peer review
-                and name a few tangible goals.
-              </p>
-              <p>Realistically, only automated or strictly controlled processes can provide repeatable metrics. A metrics-driven
-                code review tool gathers data automatically so that your information is accurate and without human bias.</p>
-              <h4> 5. Authors should annotate source code before the review</h4>
-              <p>Authors should annotate code before the review occurs because annotations guide the reviewer through the changes,
-                showing which files to look at first and defending the reason behind each code modification. Annotations
-                should be directed at other reviewers to ease the process and provide more depth in context. As an added
-                benefit, the author will often find additional errors before the peer review even begins. More bugs found
-                prior to peer review will yield in lower defect density because fewer bugs exist overall.
-              </p>
-              <h4> 6. Use checklists</h4>
-              <p>It´s very likely that each person on your team makes the same 10 mistakes over and over. Omissions in particular
-                are the hardest defects to find because it´s difficult to review something that isn´t there. Checklists are
-                the most effective way to eliminate frequently made errors and to combat the challenges of omission finding.</p>
-              <h4>7. Establish a process for fixing defects found</h4>
-              <p>Even after optimizing code review processes by time-boxing reviews, limiting LOC reviewed per hour and naming
-                key metrics for your team, there´s still a key review step missing. How will the bugs be fixed? It seems
-                obvious, but many teams do not have a systematic method for fixing the bugs they´ve worked so hard to find.</p>
-              <p>The best way to ensure that defects are fixed is to use a <a href="https://smartbear.com/product/collaborator/overview/"
-                  target="_blank"><b>collaborative
-                code review tool</b></a> that allows reviewers to log bugs, discuss them with the author, and approve changes
-                in the code. Without an automated tool, bugs found in review likely aren´t logged in the team´s usual defect
-                tracking system because they are found before code is released to QA.
-              </p>
-              <h4>8. Foster a positive code review culture</h4>
-              <p>Peer review can put strain on interpersonal team relationships. It´s difficult to have every piece of work
-                critiqued by peers and to have management evaluating and measuring defect density in your code. Therefore,
-                in order for peer code review to be successful, it´s extremely important that mangers create a culture of
-                collaboration and learning in peer review</p>
-              <p>While it´s easy to see defects as purely negative, each bug is actually an opportunity for the team to improve
-                code quality. Peer review also allows junior team members to learn from senior leaders and for even the most
-                experienced programmers to break bad habits.</p>
-              <p>Defects found in peer review are not an acceptable rubric by which to evaluate team members. Reports pulled
-                from peer code reviews should never be used in performance reports. If personal metrics become a basis for
-                compensation or promotion, developers will become hostile toward the process and naturally focus on improving
-                personal metrics rather than writing better overall code.</p>
-              <h4>9. Embrace the subconscious implications of peer review</h4>
-              <p>The knowledge that others will be examining their work naturally drives people to produce a better product.
-                This "Ego Effect" naturally incentivizes developers to write cleaner code because their peers will certainly
-                see it. The SmartBear study of Cisco Systems found that "spot checking" 20% to 33% of the code resulted in
-                lower defect density with minimal time expenditure. If your code has a 1-in-3 chance of being called out
-                for review, that´s enough of an incentive to double-check your work.</p>
-              <h4>10. Practice lightweight code reviews</h4>
-              <p>Between email, over-the-shoulder, Microsoft Word, tool-assisted and hybrids of all types there are countless
-                ways to collaboratively review code. However, to fully optimize your team´s time and to effectively measure
-                its results, a lightweight, tool-assisted process is recommended.</p>
-
-            </div>
 
           </div>
         </div>
