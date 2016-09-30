@@ -6,10 +6,7 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'Application-Details',
     template: require('./ApplicationDetails.html'),
-    style: [
-        require('./ApplicationDetails.scss')
-    ],
-    directives: []
+    styles: [require('./ApplicationDetails.scss')]
 })
 export class ApplicationDetails {
 

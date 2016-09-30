@@ -13,7 +13,7 @@ import {ApplicantUx} from './applications/applicantUx/applicantUx.component';
 import {Evaluator} from './applications/evaluator/evaluator.component';
 import { TabsModule } from 'ng2-bootstrap/ng2-bootstrap';
 import {ApplicationService} from './applications/application.service';
-
+import  {ApplicationDetails} from './applications/configUi/components/ApplicationDetails/ApplicationDetails.component';
 @NgModule({
   imports: [
     CommonModule, 
@@ -25,6 +25,7 @@ import {ApplicationService} from './applications/application.service';
   declarations: [
     Applications, 
     ConfigUi,
+    ApplicationDetails,
     ApplicantGateway,
     ApplicantUx,
     Evaluator,
