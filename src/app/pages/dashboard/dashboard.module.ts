@@ -14,17 +14,29 @@ import {Evaluator} from './applications/evaluator/evaluator.component';
 import { TabsModule } from 'ng2-bootstrap/ng2-bootstrap';
 import {ApplicationService} from './applications/application.service';
 
+import {ApplicationDetails} from './applications/configUi/components/ApplicationDetails/ApplicationDetails.component';
+import {CodeReview} from './applications/configUi/components/CodeReview/CodeReview.component';
+import {CodingStandards} from './applications/configUi/components/CodingStandards/CodingStandards.component';
+import {AngularBestPractice} from './applications/configUi/components/AngularBestPractice/AngularBestPractice.component';
+import {DevSetup} from './applications/configUi/components/DevSetup/DevSetup.component';
 @NgModule({
   imports: [
-    CommonModule, 
+    CommonModule,
     FormsModule,
     NgaModule,
     routing,
     TabsModule
   ],
   declarations: [
-    Applications, 
+    Applications,
+    ApplicationDetails,
+    CodeReview,
+    CodingStandards,
+    DevSetup,
+    AngularBestPractice,
+    DevSetup,
     ConfigUi,
+    ApplicationDetails,
     ApplicantGateway,
     ApplicantUx,
     Evaluator,
