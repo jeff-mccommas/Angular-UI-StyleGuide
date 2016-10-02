@@ -14,11 +14,7 @@ export class ConfigUi {
   CodingStandardshtml: string = require('./components/CodingStandards/CodingStandards.html');
   AngularBestPracticehtml: string = require('./components/AngularBestPractice/AngularBestPractice.html');
   DevSetuphtml: string = require('./components/DevSetup/DevSetup.html');
-
-
-
-
-
+  
   constructor() {}
 }
 

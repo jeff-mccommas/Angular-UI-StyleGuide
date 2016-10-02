@@ -17,7 +17,7 @@ import {ApplicationService} from './applications/application.service';
 import {ApplicationDetails} from './applications/configUi/components/ApplicationDetails/ApplicationDetails.component';
 import {CodeReview} from './applications/configUi/components/CodeReview/CodeReview.component';
 import {CodingStandards} from './applications/configUi/components/CodingStandards/CodingStandards.component';
-import {AngularBestPractice} from './applications/configUi/components/AngularBestPractice/AngularBestPractice';
+import {AngularBestPractice} from './applications/configUi/components/AngularBestPractice/AngularBestPractice.component';
 import {DevSetup} from './applications/configUi/components/DevSetup/DevSetup.component';
 @NgModule({
   imports: [

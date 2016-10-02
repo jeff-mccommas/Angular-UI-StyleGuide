@@ -1,1 +1,1 @@
-export * from './AngularBestPractice';
+export * from './AngularBestPractice.component';
