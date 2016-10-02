@@ -13,6 +13,7 @@ import {ApplicantUx} from './applications/applicantUx/applicantUx.component';
 import {Evaluator} from './applications/evaluator/evaluator.component';
 import { TabsModule } from 'ng2-bootstrap/ng2-bootstrap';
 import {ApplicationService} from './applications/application.service';
+<<<<<<< HEAD
 import {ApplicationDetails} from './applications/configUi/components/ApplicationDetails/ApplicationDetails.component';
 import {CodeReview} from './applications/configUi/components/CodeReview/CodeReview.component';
 import {CodingStandards} from './applications/configUi/components/CodingStandards/CodingStandards.component';
@@ -23,6 +24,9 @@ import {DevSetup} from './applications/configUi/components/DevSetup/DevSetup.com
 
 
 
+=======
+import  {ApplicationDetails} from './applications/configUi/components/ApplicationDetails/ApplicationDetails.component';
+>>>>>>> 36148964c3f7f00078bcd1d9fad138bca07d634f
 @NgModule({
   imports: [
     CommonModule,
@@ -40,6 +44,7 @@ import {DevSetup} from './applications/configUi/components/DevSetup/DevSetup.com
     AngularBestPractice,
     DevSetup,
     ConfigUi,
+    ApplicationDetails,
     ApplicantGateway,
     ApplicantUx,
     Evaluator,
