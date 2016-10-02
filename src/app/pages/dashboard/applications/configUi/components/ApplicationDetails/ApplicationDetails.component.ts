@@ -6,7 +6,9 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'Application-Details',
     template: require('./ApplicationDetails.html'),
-    styles: [require('./ApplicationDetails.scss')]
+    styles: [
+        require('./ApplicationDetails.scss')
+    ]
 })
 export class ApplicationDetails {
 

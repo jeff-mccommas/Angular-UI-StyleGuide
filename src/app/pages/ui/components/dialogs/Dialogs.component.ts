@@ -1,9 +1,6 @@
-import {Component, ViewEncapsulation} from '@angular/core';
-import {BaCard} from '../../../../theme/components';
-
+import {Component,} from '@angular/core';
 @Component({
     selector: 'Dialogs',
-    encapsulation: ViewEncapsulation.None,
     styles: [require('./Dialogs.scss')],
     template: require('./Dialogs.html'),
 })

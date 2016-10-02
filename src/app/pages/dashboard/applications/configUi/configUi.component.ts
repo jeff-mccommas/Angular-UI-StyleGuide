@@ -10,6 +10,14 @@ import {Component, ViewEncapsulation} from '@angular/core';
 })
 export class ConfigUi {
   ApplicationDetailshtml: string = require('./components/ApplicationDetails/ApplicationDetails.html');
+  CodeReviewhtml: string = require('./components/CodeReview/CodeReview.html');
+  CodingStandardshtml: string = require('./components/CodingStandards/CodingStandards.html');
+  AngularBestPracticehtml: string = require('./components/AngularBestPractice/AngularBestPractice.html');
+  DevSetuphtml: string = require('./components/DevSetup/DevSetup.html');
+
+
+
+
 
   constructor() {}
 }
