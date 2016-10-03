@@ -1,7 +1,18 @@
 <div class="edit-modal">
   <div class="edit-modal-header">EDIT MODAL</div>
-  <div class="edit-modal-footer">
-    <div class="edit-modal-btns"><a ng-click="remove()" class="btn-delete">delete</a>
-      <a ng-click="cancel()" class="btn btn-cancel">cancel</a>
-      <a ng-click="save()" class="btn btn-save">save</a></div>
-  </div></div>
+  <div class="bottom-bar-edit col-xs-12">
+    <div class="well-edit">
+      <div class="program-edit-btns btn-group">
+        <button type="button" class="btn btn-cancel" data-ng-click="EditProgCtrl.cancel()">
+          <i class="fa fa-times"></i> Cancel
+        </button>
+        <button type="button" class="btn btn-reset" data-ng-disabled="programEditForm.$pristine" ng-click="EditProgCtrl.reset()">
+          <i class="fa fa-undo"></i> reset
+        </button>
+        <button type="button" class="btn btn-save" data-ng-disabled="programEditForm.$invalid" data-ng-click="EditProgCtrl.programDetailsSubmit();">
+          <i class="fa fa-check"></i> Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
