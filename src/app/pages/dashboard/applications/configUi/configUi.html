@@ -1,35 +1,39 @@
 <div class="row">
   <div class="col-lg-12">
     <tabset [justified]="true">
-      <!--*******************************************-->
-      <!--*******************************************-->
-      <!--***************** Application Details-->
-      <!--*******************************************-->
-      <!--*******************************************-->
+
+      <!--***************** Application Details*********-->
       <tab heading="Application Details">
         <div class="col-md-6 col-md-12">
+          <ba-card bacardclass="with-scroll table-panel" ng-reflect-ba-card-class="with-scroll table-panel">
+
           <Application-Details></Application-Details>
-        </div>
-      </tab>
-      <!--*******************************************-->
-      <!--*******************************************-->
-      <!--***************** Code Review and Standards-->
-      <!--*******************************************-->
-      <!--*******************************************-->
-      <tab heading="Code Review and Standards">
-        <div class="col-lg-6 col-md-12">
-          <Code-Review></Code-Review>
+          </ba-card>
         </div>
       </tab>
 
+      <!--******* Code Review and Standards*******-->
+
+      <tab heading="Code Review and Standards">
+        <div class="col-lg-6 col-md-12">
+          <ba-card title="Code Review and Standards" baCardClass="with-scroll button-panel">
+          <Code-Review></Code-Review>
+          </ba-card>
+        </div>
+      </tab>
       <tab heading="Angular Best Practice">
         <div class="col-lg-6 col-md-12">
+          <ba-card title="Angular Best Practices" baCardClass="with-scroll button-panel">
+
           <AngularBest-Practice></AngularBest-Practice>
+          </ba-card>
         </div>
       </tab>
       <tab heading="Developer Environment Set Up">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-12">
+          <ba-card title="Setting up your Development Environment -With Your  IDE" baCardClass="with-scroll button-panel">
           <Dev-Setup></Dev-Setup>
+          </ba-card>
         </div>
       </tab>
     </tabset>

@@ -3,7 +3,7 @@
     <h3 class="card-title">{{title}}</h3>
     <a *ngIf="source" (click)="lgModal.show()" class="view-source">Source</a>
   </div>
-  <div class="card-body no-overflow">
+  <div class="card-body">
     <ng-content></ng-content>
   </div>
 </div>
@@ -19,7 +19,6 @@
           COPY TO CLIPBOARD
         </button>
         </h4>
-      </div>
       <div class="modal-body">
         <div class="source-html">
           <div class="well well-lg" id="CopySourceHtml">
