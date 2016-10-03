@@ -1,0 +1,50 @@
+//radio inputs
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"].copy {
+  display: block;
+}
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 28px;
+  height: 21px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  background: url('assets/img/sprite.png') -187px -397px no-repeat;
+  cursor: pointer;
+}
+input[type="radio"]:checked + label span {
+  background: url('assets/img/sprite.png') -187px -469px no-repeat;
+}
+input[type="radio"] + label span:hover {
+  background: url('assets/img/sprite.png') -187px -433px no-repeat;
+}
+input[type="radio"] + label span:active {
+  background: url('assets/img/sprite.png') -187px -469px no-repeat;
+}
+.form-horizontal {
+  .radio, .radio-inline {
+    padding-top: 0;
+  }
+}
+//checkbox inputs
+input[type="checkbox"] {
+  display: none !important;
+}
+input[type="checkbox"] + label span.isChecked {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding-left: 20px !important;
+  margin: -1px 10px 0 0;
+  vertical-align: middle;
+  background: url('assets/img/sprite.png') -154px -397px no-repeat;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label span.isChecked {
+  background: url('assets/img/sprite.png') -154px -427px no-repeat !important;
+}
+.checkbox input[type="checkbox"] + label span.isChecked:hover {
+  background: url('assets/img/sprite.png') -154px -457px no-repeat !important;
+}

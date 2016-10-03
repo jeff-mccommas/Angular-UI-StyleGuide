@@ -1,26 +1,43 @@
 <div class="checkbox-demo-row">
   <div class="input-demo checkbox-demo row">
-    <ba-multi-checkbox [(ngModel)]="checkboxModel" [propertiesMapping]="checkboxPropertiesMapping"></ba-multi-checkbox>
+      <div class="checkbox col-md-4">
+          <input id="checkbox1" name="checkbox1" type="checkbox">
+          <label for="checkbox1"><span  class="isChecked"></span>
+              <span></span> checkbox1
+          </label>
+      </div>
+      <div class="checkbox col-md-4">
+          <input id="checkbox2" name="checkbox2" type="checkbox">
+          <label for="checkbox2"><span  class="isChecked"></span>
+              <span></span> checkbox2
+          </label>
+      </div>
+      <div class="checkbox col-md-4">
+          <input id="checkbox3" name="checkbox3" type="checkbox">
+          <label for="checkbox3"><span  class="isChecked"></span>
+              <span></span> checkbox3
+          </label>
+      </div>
   </div>
   <div class="input-demo radio-demo row">
-    <div class="col-md-4">
-      <label class="radio-inline custom-radio nowrap">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <span>Option 1</span>
-      </label>
-    </div>
-    <div class="col-md-4">
-      <label class="radio-inline custom-radio nowrap">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <span>Option 2</span>
-      </label>
-    </div>
-    <div class="col-md-4">
-      <label class="radio-inline custom-radio nowrap">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-        <span>Option3</span>
-      </label>
-    </div>
+      <div class="radio col-md-4">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="radio1">
+          <label class="radio-inline" for="optionsRadios1">
+              <span></span> radio1
+          </label>
+      </div>
+      <div class="radio col-md-4">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="Radio 2">
+          <label class="radio-inline" for="optionsRadios2">
+              <span></span> radio2
+          </label>
+      </div>
+      <div class="radio col-md-4">
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="radio 3">
+          <label class="radio-inline" for="optionsRadios3">
+              <span></span> radio3
+          </label>
+  </div>
   </div>
 </div>
 <div>
