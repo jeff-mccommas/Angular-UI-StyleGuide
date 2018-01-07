@@ -32,3 +32,9 @@ cd Liaison-Admin-Style-Guide
 <p>Go to <a href="http://0.0.0.0:3000">http://0.0.0.0:3000</a> or <a href="http://localhost:3000">http://localhost:3000</a> in your&nbsp;browser.</p>
 <p>To run the local copy in production mode and build the sources,&nbsp;execute:</p>
 npm run prebuild:prod &amp;&amp; npm run build:prod &amp;&amp; npm run server:prod
+
+
+
+#EC2 connect:
+puttygen styleguideaws.ppk -O private-openssh -o styleguideaws.pem
+sudo ssh -i styleguideaws.pem bitnami@ec2-34-229-215-247.compute-1.amazonaws.com
