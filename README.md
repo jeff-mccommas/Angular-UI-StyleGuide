@@ -35,6 +35,6 @@ npm run prebuild:prod &amp;&amp; npm run build:prod &amp;&amp; npm run server:pr
 
 
 
-#EC2 connect:
+## EC2 connect:
 puttygen styleguideaws.ppk -O private-openssh -o styleguideaws.pem
 sudo ssh -i styleguideaws.pem bitnami@ec2-34-229-215-247.compute-1.amazonaws.com
